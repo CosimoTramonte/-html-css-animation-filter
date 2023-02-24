@@ -102,3 +102,45 @@
         transform: rotate(300deg);
     }
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: move-top-12;
+    animation-duration: 1.5s;
+    animation-iteration-count: unset;
+    animation-timing-function: linear;
+}
+
+@keyframes move-top-12 {
+    0%{
+        left: 10%;
+    }
+
+    50%{
+        left: 65%;
+    }
+
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: move-bottom-12;
+    animation-duration: 1.5s;
+    animation-iteration-count: unset;
+    animation-timing-function: linear;
+}
+
+@keyframes move-bottom-12 {
+    0%{
+        right: 20%;
+    }
+
+    50%{
+        right: 65%;
+    }
+
+    100%{
+        right: 20%;
+    }
+}
