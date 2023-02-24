@@ -144,3 +144,81 @@
         right: 20%;
     }
 }
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: move-top-13;
+    animation-duration: 2s;
+    animation-iteration-count: unset;
+    animation-timing-function: linear;
+}
+
+@keyframes move-top-13 {
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+
+    30%{
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+
+    45%{
+        top: calc(100% - 10px);
+        left: calc(100% - 30px);
+    }
+
+    75%{
+        top: calc(100% - 10px);
+        left: 0;
+    }
+
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: move-bottom-13;
+    animation-duration: 2s;
+    animation-iteration-count: unset;
+    animation-timing-function: linear;
+}
+
+@keyframes move-bottom-13 {
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+
+    30%{
+        bottom: -10px;
+        right: calc(100% - 30px);
+    }
+
+    45%{
+        bottom: calc(100% - 10px);
+        right: calc(100% - 30px);
+    }
+
+    75%{
+        bottom: calc(100% - 10px);
+        right: 0;
+    }
+
+    90%{
+        right: -15px;
+        bottom: -10px;
+    }
+
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
