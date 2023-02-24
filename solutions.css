@@ -1,0 +1,104 @@
+.ex-1-square{
+    transition: background-color 2s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-2-square{
+    transition: width 2s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+.ex-3-square{
+    transition: border-radius 1s;
+}
+
+.ex-3-square:hover{
+    border-radius: 100%;
+}
+
+.ex-4-square{
+    transition: opacity 1s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+.ex-5-square{
+    transition: transform 1s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-7-img{
+    transition: filter 1.5s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(0.8) sepia(0.5);
+}
+
+.ex-8-img{
+    transition: all 2s;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(0.8) saturate(1);
+    border-radius: 30px;
+}
+
+.ex-9-img{
+    transition: all 2s;
+}
+
+.ex-9-img:hover{
+    transform: scale(1.5);
+    filter: grayscale(0.8) saturate(1);
+    border-radius: 30px;
+}
+
+.ex-10-icon{
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon:hover{
+    animation-name: spin2;
+    animation-duration: 2s;
+    animation-iteration-count: unset;
+    animation-timing-function: ease-in;
+}
+
+@keyframes spin2 {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    90%{
+        transform: rotate(300deg);
+    }
+}
